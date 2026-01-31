@@ -227,7 +227,7 @@ const Home = () => {
                 icon: <FaWallet />
               },
               {
-                title: "50+ More Modules",
+                title: "100+ More Modules",
                 desc: "Library, ID cards, certificates, notifications, SMS & more.",
                 icon: <FaPlusCircle />
               }
@@ -309,20 +309,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
       <section id="features" className="section-padding bg-white">
         <div className="container text-center">
           <h2 className="fw-bold text-blue">Preview of Msp IT Solution Software & School Unity</h2>
@@ -535,6 +521,55 @@ const Home = () => {
 
         </div>
       </section>
+
+<section className="section-padding bg-white">
+  <div className="container text-center">
+    <h2 className="fw-bold text-blue mb-4">
+      SchoolUnity ERP Dashboard
+    </h2>
+    <p className="text-muted mb-5">
+      Explore real features that work inside SchoolUnity ERP software.
+    </p>
+
+    <div className="row align-items-center">
+
+      {/* Left Features */}
+      <div className="col-md-4 text-end feature-side">
+        <div className="side-feature">Student Management</div>
+        <div className="side-feature">Fee Collection</div>
+        <div className="side-feature">Staff Attendance</div>
+        <div className="side-feature">Expense System</div>
+        <div className="side-feature">Income Reports</div>
+        <div className="side-feature">Academic Calendar</div>
+        <div className="side-feature">Homework</div>
+      </div>
+
+    
+      <div className="col-md-4 text-center">
+        <div className="dashboard-frame">
+          <img 
+            src="../../assets/img/scrrenphone.png"   
+            alt="SchoolUnity Dashboard"
+            className="img-fluid"
+          />
+        </div>
+      </div>
+
+   
+      <div className="col-md-4 text-start feature-side">
+        <div className="side-feature">Online Exams</div>
+        <div className="side-feature">Class Management</div>
+        <div className="side-feature">Library System</div>
+        <div className="side-feature">Transport</div>
+        <div className="side-feature">Hostel</div>
+        <div className="side-feature">Face Attendance</div>
+        <div className="side-feature">Communication</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
 
 

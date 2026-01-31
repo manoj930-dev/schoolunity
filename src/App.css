@@ -294,3 +294,30 @@
   transform: translateY(-8px);
   background: rgba(255,255,255,0.2);
 }
+
+.dashboard-frame {
+  background: #fff;
+  padding: 15px;
+  border-radius: 18px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.2);
+}
+
+.feature-side {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.side-feature {
+  background: #f8f9fa;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.side-feature:hover {
+  background: #0d6efd;
+  color: #fff;
+  transform: translateX(10px);
+}
