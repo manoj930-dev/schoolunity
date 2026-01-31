@@ -83,6 +83,7 @@ const Home = () => {
       <section className="section-padding bg-blue text-white">
         <div className="container">
           <div className="row align-items-center">
+
             <div className="col-md-6">
               <h1 className="fw-bold">
                 Ek School, <span className="text-green">Ek System</span>
@@ -94,9 +95,6 @@ const Home = () => {
               <p className="small text-light">
                 Designed & Developed by MSP IT Solutions
               </p>
-              <a href="#plans" className="btn btn-green btn-lg mt-3">
-                View Plans
-              </a>
             </div>
 
             <div className="col-md-6 text-center">
@@ -108,8 +106,33 @@ const Home = () => {
               />
             </div>
           </div>
+
+      
+          <div className="row mt-5 text-center g-4">
+            <div className="col-md-4">
+              <div className="stat-box">
+                <h2>500+</h2>
+                <p>Schools Using SchoolUnity</p>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="stat-box">
+                <h2>100+</h2>
+                <p>Automated Features</p>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="stat-box">
+                <h2>99%</h2>
+                <p>Client Satisfaction</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
+
 
       <section id="features" className="section-padding bg-light">
         <div className="container text-center">
@@ -232,6 +255,71 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+
+
+      <section id="features" className="section-padding bg-light">
+        <div className="container">
+
+          <div className="text-center mb-5">
+            <h2 className="fw-bold text-blue">Benefits of SchoolUnity</h2>
+            <p className="text-muted">
+              Powerful, easy-to-use tools to manage every part of your school.
+            </p>
+          </div>
+
+          <div className="row align-items-center gy-5">
+
+            {/* Left Image */}
+            <div className="col-xl-6 text-center">
+              <img
+                src="../../assets/img/features.png"
+                className="img-fluid "
+                alt="SchoolUnity Features"
+              />
+            </div>
+
+            {/* Right Benefits */}
+            <div className="col-xl-6">
+              <div className="row gy-4">
+
+                {[
+                  "Custom Development for Your School",
+                  "Fully Responsive on Mobile & Tablet",
+                  "Fast, Secure & Cloud-Based System",
+                  "Scalable for Single or Multiple Branches",
+                  "User-Friendly Interface for Everyone",
+                  "24/7 Technical Support",
+                  "Automated Reports & Analytics",
+                  "Paperless Digital Management",
+                  "Data Backup & Security",
+                  "Improves Productivity & Saves Time"
+                ].map((text, i) => (
+                  <div className="col-md-6" key={i}>
+                    <div className="benefit-box">
+                      <span className="benefit-icon">✔</span>
+                      <span>{text}</span>
+                    </div>
+                  </div>
+                ))}
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
