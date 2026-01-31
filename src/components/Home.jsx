@@ -107,7 +107,7 @@ const Home = () => {
             </div>
           </div>
 
-      
+
           <div className="row mt-5 text-center g-4">
             <div className="col-md-4">
               <div className="stat-box">
@@ -522,53 +522,93 @@ const Home = () => {
         </div>
       </section>
 
-<section className="section-padding bg-white">
-  <div className="container text-center">
-    <h2 className="fw-bold text-blue mb-4">
-      SchoolUnity ERP Dashboard
-    </h2>
-    <p className="text-muted mb-5">
-      Explore real features that work inside SchoolUnity ERP software.
-    </p>
+      <section className="section-padding bg-white">
+        <div className="container text-center">
+          <h2 className="fw-bold text-blue mb-4">
+            SchoolUnity ERP Dashboard
+          </h2>
+          <p className="text-muted mb-5">
+            Explore real features that work inside SchoolUnity ERP software.
+          </p>
 
-    <div className="row align-items-center">
+          <div className="row align-items-center">
 
-      {/* Left Features */}
-      <div className="col-md-4 text-end feature-side">
-        <div className="side-feature">Student Management</div>
-        <div className="side-feature">Fee Collection</div>
-        <div className="side-feature">Staff Attendance</div>
-        <div className="side-feature">Expense System</div>
-        <div className="side-feature">Income Reports</div>
-        <div className="side-feature">Academic Calendar</div>
-        <div className="side-feature">Homework</div>
-      </div>
+            {/* Left Features */}
+            <div className="col-md-4 text-start feature-side">
+              <div className="side-feature">
+                <h6>Student Management</h6>
+                <p>Manage student admission, profiles, documents and academic records digitally.</p>
+              </div>
 
-    
-      <div className="col-md-4 text-center">
-        <div className="dashboard-frame">
-          <img 
-            src="../../assets/img/scrrenphone.png"   
-            alt="SchoolUnity Dashboard"
-            className="img-fluid"
-          />
+              <div className="side-feature">
+                <h6>Fee Collection</h6>
+                <p>Collect online/offline fees, generate receipts and track pending payments.</p>
+              </div>
+
+              <div className="side-feature">
+                <h6>Staff Attendance</h6>
+                <p>Track daily staff attendance with reports and automated records.</p>
+              </div>
+
+              <div className="side-feature">
+                <h6>Expense System</h6>
+                <p>Record daily expenses, vendor payments and financial history.</p>
+              </div>
+
+           
+
+              <div className="side-feature">
+                <h6>Homework</h6>
+                <p>Teachers can assign homework and students can view it online.</p>
+              </div>
+
+            </div>
+
+
+            <div className="col-md-4 text-center">
+              <div className="dashboard-frame">
+                <img
+                  src="../../assets/img/scrrenphone.png"
+                  alt="SchoolUnity Dashboard"
+                  className="img-fluid"
+                />
+              </div>
+            </div>
+
+
+            <div className="col-md-4 text-start feature-side">
+
+              <div className="side-feature">
+                <h6>Online Exams</h6>
+                <p>Conduct online tests with auto evaluation and instant results.</p>
+              </div>
+
+              <div className="side-feature">
+                <h6>Library System</h6>
+                <p>Manage books, issue/return records and student library history.</p>
+              </div>
+
+              <div className="side-feature">
+                <h6>Transport</h6>
+                <p>Track bus routes, drivers and student transport details.</p>
+              </div>
+
+              <div className="side-feature">
+                <h6>Face Attendance</h6>
+                <p>AI based face recognition attendance system.</p>
+              </div>
+
+              <div className="side-feature">
+                <h6>Communication</h6>
+                <p>Send SMS, WhatsApp and app notifications to parents & staff.</p>
+              </div>
+
+            </div>
+
+
+          </div>
         </div>
-      </div>
-
-   
-      <div className="col-md-4 text-start feature-side">
-        <div className="side-feature">Online Exams</div>
-        <div className="side-feature">Class Management</div>
-        <div className="side-feature">Library System</div>
-        <div className="side-feature">Transport</div>
-        <div className="side-feature">Hostel</div>
-        <div className="side-feature">Face Attendance</div>
-        <div className="side-feature">Communication</div>
-      </div>
-
-    </div>
-  </div>
-</section>
+      </section>
 
 
 
