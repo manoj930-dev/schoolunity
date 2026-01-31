@@ -1,5 +1,34 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import {
+  FaUserGraduate,
+  FaChalkboardTeacher,
+  FaMoneyBillWave,
+  FaQuestionCircle,
+  FaFileAlt,
+  FaUsers,
+  FaBuilding,
+  FaCalendarCheck,
+  FaChartLine,
+  FaBus,
+  FaPenAlt,
+  FaBookOpen,
+  FaClock,
+  FaLaptop,
+  FaPlaneDeparture,
+  FaVideo,
+  FaWallet,
+  FaPlusCircle
+} from "react-icons/fa";
+import {
+  FaIdCard,
+  FaFingerprint,
+  FaMoneyCheckAlt,
+  FaUserShield,
+  FaCloud,
+  FaCheckCircle, FaStar
+} from "react-icons/fa";
+
 
 const Home = () => {
   return (
@@ -82,28 +111,121 @@ const Home = () => {
         </div>
       </section>
 
-      {/* FEATURES */}
       <section id="features" className="section-padding bg-light">
         <div className="container text-center">
-          <h2 className="fw-bold text-blue mb-5">Core Features</h2>
+          <h2 className="fw-bold text-blue"> Features of SchoolUnity</h2>
+          <p>Powerful, easy-to-use tools to manage every part of your school.</p>
 
-          <div className="row g-4">
+          <div className="row g-4 mt-3">
             {[
-              "Student Management",
-              "Staff Management",
-              "Fee Collection",
-              "Attendance System",
-              "Accounts & Reports",
-              "Transport & Hostel",
+              {
+                title: "Student Management",
+                desc: "Complete student lifecycle: admission, ID, documents, academic records & promotion system.",
+                icon: <FaUserGraduate />
+              },
+              {
+                title: "Staff Management",
+                desc: "Manage teachers & staff profiles, salary structure, roles and performance.",
+                icon: <FaChalkboardTeacher />
+              },
+              {
+                title: "Fee Collection",
+                desc: "Online & offline fee payment, invoices, pending dues and automated receipts.",
+                icon: <FaMoneyBillWave />
+              },
+              {
+                title: "Enquiry Management",
+                desc: "Track new enquiries, follow-ups, conversion reports & lead management.",
+                icon: <FaQuestionCircle />
+              },
+              {
+                title: "Test Report Management",
+                desc: "Generate subject-wise tests, marks entry & downloadable student reports.",
+                icon: <FaFileAlt />
+              },
+              {
+                title: "Batch System Management",
+                desc: "Create multiple batches, assign teachers & manage students easily.",
+                icon: <FaUsers />
+              },
+              {
+                title: "Multiple Branch System",
+                desc: "Centralized control of multiple schools/branches in one dashboard.",
+                icon: <FaBuilding />
+              },
+              {
+                title: "Attendance System",
+                desc: "Daily student & staff attendance with reports & SMS alerts.",
+                icon: <FaCalendarCheck />
+              },
+              {
+                title: "Accounts & Reports",
+                desc: "Complete financial tracking: income, expenses, profit & yearly reports.",
+                icon: <FaChartLine />
+              },
+              {
+                title: "Transport & Hostel",
+                desc: "Bus routes, hostel rooms, student allocation & fee management.",
+                icon: <FaBus />
+              },
+              {
+                title: "Examinations",
+                desc: "Create exams, grading system, result publishing & performance analysis.",
+                icon: <FaPenAlt />
+              },
+              {
+                title: "Lesson Plan",
+                desc: "Teacher lesson planning, syllabus tracking & subject progress.",
+                icon: <FaBookOpen />
+              },
+              {
+                title: "Time Table Management",
+                desc: "Auto-generate class schedules for students and teachers.",
+                icon: <FaClock />
+              },
+              {
+                title: "Online Exam System",
+                desc: "Conduct online tests with MCQ, auto results & secure login.",
+                icon: <FaLaptop />
+              },
+              {
+                title: "Leave Approval",
+                desc: "Online leave request & approval system for staff & students.",
+                icon: <FaPlaneDeparture />
+              },
+              {
+                title: "Live Classes",
+                desc: "Integrated live video classes with attendance & recordings.",
+                icon: <FaVideo />
+              },
+              {
+                title: "Expense System",
+                desc: "Track daily expenses, vendor payments & monthly reports.",
+                icon: <FaWallet />
+              },
+              {
+                title: "50+ More Modules",
+                desc: "Library, ID cards, certificates, notifications, SMS & more.",
+                icon: <FaPlusCircle />
+              }
             ].map((item, i) => (
               <div className="col-md-4" key={i}>
-                <div className="card h-100 shadow-sm border-0">
-                  <div className="card-body">
-                    <h5 className="fw-bold text-green">{item}</h5>
-                    <p className="text-muted small">
-                      {item} ko easily, securely aur digitally manage karein.
-                    </p>
+                <div className="feature-card h-100">
+
+                  <div className="count-badge">
+                    {String(i + 1).padStart(2, "0")}
                   </div>
+
+                  {/* <div className="feature-icon">
+              {item.icon}
+            </div> */}
+
+                  <h5 className="fw-bold text-green mt-3">{item.title}</h5>
+                  <p className="text-muted small">{item.desc}</p>
+
+                  <button className="btn btn-sm btn-outline-primary mt-auto">
+                    Learn More
+                  </button>
                 </div>
               </div>
             ))}
@@ -111,32 +233,257 @@ const Home = () => {
         </div>
       </section>
 
+
+
+      <section id="features" className="section-padding bg-white">
+        <div className="container text-center">
+          <h2 className="fw-bold text-blue">Preview of Msp IT Solution Software & School Unity</h2>
+          <p className="text-muted mt-2">
+            A complete school management system to digitize your institute with
+            smart tools for students, teachers, administration and parents.
+          </p>
+
+
+          <div className="row g-4 mt-3">
+
+            <div className="col-md-4">
+              <div className="img-card">
+                <img src="../../assets/img/Dashboard.png" alt="Dashboard" />
+                <div className="overlay">
+                  <h5>Dashboard</h5>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="col-md-4">
+              <div className="img-card">
+                <img src="../../assets/img/Admission-enquiry.png" alt="Admission" />
+                <div className="overlay">
+                  <h5>Admission Enquiry</h5>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="col-md-4">
+              <div className="img-card">
+                <img src="../../assets/img/StudentAdmission.png" alt="Studentadmission" />
+                <div className="overlay">
+                  <h5>Student Admission Online & Offline</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="row g-4 mt-3">
+
+            <div className="col-md-4">
+              <div className="img-card">
+                <img src="../../assets/img/Attendance.png" alt="Attendance" />
+                <div className="overlay">
+                  <h5>Attendance</h5>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="col-md-4">
+              <div className="img-card">
+                <img src="../../assets/img/AdmitCard.png" alt="AdmitCard" />
+                <div className="overlay">
+                  <h5>AdmitCard</h5>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="col-md-4">
+              <div className="img-card">
+                <img src="../../assets/img/Examintions.png" alt="Examintions" />
+                <div className="overlay">
+                  <h5>Examintions</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="row g-4 mt-3">
+
+            <div className="col-md-4">
+              <div className="img-card">
+                <img src="../../assets/img/Accounts.png" alt="Accounts" />
+                <div className="overlay">
+                  <h5>Accounts Mangement</h5>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="col-md-4">
+              <div className="img-card">
+                <img src="../../assets/img/BalanceSheet.png" alt="BalanceSheet" />
+                <div className="overlay">
+                  <h5>BalanceSheet</h5>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="col-md-4">
+              <div className="img-card">
+                <img src="../../assets/img/Comunite.png" alt="Comunite" />
+                <div className="overlay">
+                  <h5>Communicate</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div className="row g-4 mt-3">
+
+            <div className="col-md-4">
+              <div className="img-card">
+                <img src="../../assets/img/FessCollection.png" alt="FessCollection" />
+                <div className="overlay">
+                  <h5>Fess Collection</h5>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="col-md-4">
+              <div className="img-card">
+                <img src="../../assets/img/HomeWork.png" alt="HomeWork" />
+                <div className="overlay">
+                  <h5>HomeWork</h5>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="col-md-4">
+              <div className="img-card">
+                <img src="../../assets/img/Hostal.png" alt="Hostal" />
+                <div className="overlay">
+                  <h5>Hostal Mangemant</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div className="row g-4 mt-3">
+
+            <div className="col-md-4">
+              <div className="img-card">
+                <img src="../../assets/img/IdCard.png" alt="IdCard" />
+                <div className="overlay">
+                  <h5>Id Card Mangement</h5>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="col-md-4">
+              <div className="img-card">
+                <img src="../../assets/img/Invortary.png" alt="Invortary" />
+                <div className="overlay">
+                  <h5>Inventory</h5>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="col-md-4">
+              <div className="img-card">
+                <img src="../../assets/img/LeaveApprove.png" alt="LeaveApprove" />
+                <div className="overlay">
+                  <h5>Leave Approve</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div className="row g-4 mt-3">
+
+            <div className="col-md-4">
+              <div className="img-card">
+                <img src="../../assets/img/OnlineExam.png" alt="OnlineExam" />
+                <div className="overlay">
+                  <h5>Online Eaxm</h5>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="col-md-4">
+              <div className="img-card">
+                <img src="../../assets/img/TimeTable.png" alt="TimeTable" />
+                <div className="overlay">
+                  <h5>TimeTable</h5>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="col-md-4">
+              <div className="img-card">
+                <img src="../../assets/img/TransportFees.png" alt="Transport" />
+                <div className="overlay">
+                  <h5>TransportFess</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
       {/* DETAILED FEATURES */}
+
       <section className="section-padding bg-white">
         <div className="container">
           <h2 className="fw-bold text-blue text-center mb-4">
             What Schoolunity ERP Can Do?
           </h2>
 
-          <div className="row">
-            <div className="col-md-6">
-              <ul>
-                <li>Online Admission & Student Records</li>
-                <li>Parent & Student Login Panel</li>
-                <li>Exam, Result & Report Card</li>
-                <li>Expense & Income Management</li>
-                <li>School Website & ID Card</li>
-              </ul>
-            </div>
-            <div className="col-md-6">
-              <ul>
-                <li>QR / Biometric Attendance</li>
-                <li>Staff Salary Management</li>
-                <li>Transport & Hostel System</li>
-                <li>Multi-User Admin Panel</li>
-                <li>Secure Cloud Data</li>
-              </ul>
-            </div>
+          <p className="text-center text-muted mb-5">
+            Schoolunity ERP aapke school ke har department ko digitally manage karne
+            ke liye ek all-in-one solution hai.
+          </p>
+
+          <div className="row g-4">
+            {[
+              { text: "Online Admission & Student Records", icon: <FaUserGraduate /> },
+              { text: "Parent & Student Login Panel", icon: <FaUsers /> },
+              { text: "Exam, Result & Report Card", icon: <FaFileAlt /> },
+              { text: "Expense & Income Management", icon: <FaWallet /> },
+              { text: "School Website & ID Card", icon: <FaIdCard /> },
+              { text: "QR / Biometric Attendance", icon: <FaFingerprint /> },
+              { text: "Staff Salary Management", icon: <FaMoneyCheckAlt /> },
+              { text: "Transport & Hostel System", icon: <FaBus /> },
+              { text: "Multi-User Admin Panel", icon: <FaUserShield /> },
+              { text: "Secure Cloud Data", icon: <FaCloud /> }
+            ].map((item, i) => (
+              <div className="col-md-6" key={i}>
+                <div className="feature-list-card">
+                  <span className="feature-icon-sm">{item.icon}</span>
+                  <span>{item.text}</span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -150,7 +497,7 @@ const Home = () => {
 
           <div className="row g-4">
             <div className="col-md-3">
-              <div className="shadow-sm p-3 h-100">
+              <div className="shadow-sm p-3 h-100 ">
                 <h6 className="fw-bold text-green">Low Cost</h6>
                 <p className="small text-muted">
                   Affordable per-student pricing.
@@ -186,39 +533,60 @@ const Home = () => {
       </section>
 
       {/* PLANS */}
-      <section id="plans" className="section-padding">
+      <section id="plans" className="section-padding bg-light">
         <div className="container text-center">
-          <h2 className="fw-bold text-blue mb-5">Pricing Plans</h2>
+          <h2 className="fw-bold text-blue mb-2">Pricing Plans</h2>
+          <p className="text-muted mb-5">
+            Choose a plan that fits your school size and requirements.
+          </p>
 
           <div className="row justify-content-center g-4">
+
+            {/* Basic Plan */}
             <div className="col-md-5">
-              <div className="card shadow h-100">
-                <div className="card-body text-start">
-                  <h4 className="text-blue fw-bold">₹100 / Student</h4>
-                  <ul>
-                    <li>ID Cards</li>
-                    <li>School Website</li>
-                    <li>Admin, Staff, Parent, Student Panel</li>
-                  </ul>
-                </div>
+              <div className="pricing-card featured">
+                <h6 className="plan-badge">Basic</h6>
+                <h4 className="text-blue fw-bold">₹100 <span>/ Student</span></h4>
+
+                <ul className="list-unstyled mt-3">
+                  <li><FaCheckCircle /> ID Cards</li>
+                  <li><FaCheckCircle /> School Website</li>
+                  <li><FaCheckCircle /> Admin, Staff, Parent, Student Panel</li>
+                  <li><FaCheckCircle /> Exams & Reports</li>
+                  <li><FaCheckCircle /> Fee Management</li>
+                </ul>
+
+                <button className="btn btn-outline-primary w-100 mt-3">
+                  Get Started
+                </button>
               </div>
             </div>
 
-            <div className="col-md-5">
-              <div className="card shadow h-100 border-success">
-                <div className="card-body text-start">
-                  <h4 className="text-green fw-bold">₹150 / Student</h4>
-                  <ul>
-                    <li>All ₹100 Features</li>
-                    <li>QR + Biometric Attendance</li>
-                  </ul>
-                </div>
+            {/* Premium Plan */}
+            <div className="col-md-5 ms-3">
+              <div className="pricing-card featured">
+                <h6 className="plan-badge premium">
+                  <FaStar /> Most Popular
+                </h6>
+                <h4 className="text-green fw-bold">₹150 <span>/ Student</span></h4>
+
+                <ul className="list-unstyled mt-3">
+                  <li><FaCheckCircle /> All Basic Features</li>
+                  <li><FaCheckCircle /> QR + Biometric Attendance</li>
+                  <li><FaCheckCircle /> Online Exams</li>
+                  <li><FaCheckCircle /> Live Classes</li>
+                  <li><FaCheckCircle /> Priority Support</li>
+                </ul>
+
+                <button className="btn btn-success w-100 mt-3">
+                  Choose Plan
+                </button>
               </div>
             </div>
+
           </div>
         </div>
       </section>
-
       {/* CONTACT */}
       <section id="contact" className="section-padding bg-blue text-white">
         <div className="container text-center">
