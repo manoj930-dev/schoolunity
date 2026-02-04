@@ -78,7 +78,6 @@ const Home = () => {
           </div>
         </div>
       </nav>
-
       {/* HERO */}
       <section className="section-padding bg-blue text-white">
         <div className="container">
@@ -132,6 +131,54 @@ const Home = () => {
           </div>
         </div>
       </section>
+
+
+
+      <section id="about" className="section-padding bg-light">
+        <div className="container">
+
+          <div className="row align-items-center g-4">
+
+            {/* Left Content */}
+            <div className="col-md-6">
+              <h2 className="fw-bold text-blue">
+                About Schoolunity – Smart & Fast School Management Software
+              </h2>
+
+              <p className="mt-3">
+                Schoolunity is a complete digital solution designed to manage all school
+                operations from one platform. It helps schools automate daily tasks,
+                reduce paperwork and improve communication between students, teachers,
+                parents and administration.
+              </p>
+
+              <p>
+                With powerful features like student management, online exams, face
+                attendance, fee collection, homework tracking and real-time reports,
+                Schoolunity makes school management simple, fast and secure.
+              </p>
+
+              <ul className="mt-3">
+                <li>All-in-one school ERP system</li>
+                <li>Cloud based & secure platform</li>
+                <li>Mobile friendly for parents & teachers</li>
+                <li>Real-time reports & analytics</li>
+              </ul>
+            </div>
+
+            {/* Right Image */}
+            <div className="col-md-6 text-center">
+              <img
+                src="../../assets/img/msp.png"
+                alt="Schoolunity Dashboard"
+                className="img-fluid rounded shadow"
+              />
+            </div>
+
+          </div>
+        </div>
+      </section>
+
 
 
       <section id="features" className="section-padding bg-light">
@@ -316,8 +363,6 @@ const Home = () => {
             A complete school management system to digitize your institute with
             smart tools for students, teachers, administration and parents.
           </p>
-
-
           <div className="row g-4 mt-3">
 
             <div className="col-md-4">
@@ -328,7 +373,6 @@ const Home = () => {
                 </div>
               </div>
             </div>
-
 
             <div className="col-md-4">
               <div className="img-card">
@@ -522,6 +566,94 @@ const Home = () => {
         </div>
       </section>
 
+
+
+      <section id="data-migration" className="section-padding bg-light">
+        <div className="container text-center">
+          <h2 className="fw-bold text-blue mb-3">
+            Previous School Data Migration
+          </h2>
+          <p className="text-muted mb-5">
+            Agar aapke school ka data pehle kisi software, Excel ya register me hai,
+            to hum use securely SchoolUnity ERP me import kar dete hain.
+          </p>
+
+          <div className="row g-4">
+
+            <div className="col-md-4">
+              <div className="migration-card">
+                <h5>Student Previous Records</h5>
+                <p>
+                  Old admission register, Excel sheets ya files se
+                  student ka complete data system me add kiya jata hai.
+                </p>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="migration-card">
+                <h5>Fee & Payment History</h5>
+                <p>
+                  Pichhle saalon ki fees, receipts aur dues ka record
+                  safely import karke reports ready kar dete hain.
+                </p>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="migration-card">
+                <h5>Staff & Salary Data</h5>
+                <p>
+                  Teachers aur staff ka joining data, salary structure
+                  aur attendance history bhi add hoti hai.
+                </p>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="migration-card">
+                <h5>Exams & Results</h5>
+                <p>
+                  Old exam records, marksheets aur result history
+                  ko digital format me convert kiya jata hai.
+                </p>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="migration-card">
+                <h5>Documents & Certificates</h5>
+                <p>
+                  TC, ID proof, certificates aur important documents
+                  system me securely upload kiye jate hain.
+                </p>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="migration-card highlight">
+                <h5>100% Safe & Secure Process</h5>
+                <p>
+                  Aapka data bilkul confidential rehta hai.
+                  Migration ke baad aapka purana data bhi safe rahega.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div className="mt-5">
+            <h5 className="text-green">
+              "Aap bas data provide kijiye – baaki setup hum sambhal lenge."
+            </h5>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
       <section className="section-padding bg-white">
         <div className="container text-center">
           <h2 className="fw-bold text-blue mb-4">
@@ -533,7 +665,7 @@ const Home = () => {
 
           <div className="row align-items-center">
 
-            {/* Left Features */}
+
             <div className="col-md-4 text-start feature-side">
               <div className="side-feature">
                 <h6>Student Management</h6>
@@ -555,7 +687,7 @@ const Home = () => {
                 <p>Record daily expenses, vendor payments and financial history.</p>
               </div>
 
-           
+
 
               <div className="side-feature">
                 <h6>Homework</h6>
@@ -609,9 +741,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
-
-
 
 
       {/* DETAILED FEATURES */}
@@ -695,6 +824,7 @@ const Home = () => {
         </div>
       </section>
 
+
       {/* PLANS */}
       <section id="plans" className="section-padding bg-light">
         <div className="container text-center">
@@ -750,18 +880,94 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* CONTACT */}
-      <section id="contact" className="section-padding bg-blue text-white">
-        <div className="container text-center">
-          <h2 className="fw-bold mb-3">Contact Us</h2>
-          <p className="fw-bold">MSP IT Solutions</p>
-          <p>📞 9306487930 | 8901517890</p>
-          <p>✉️ monuyadav4772@gmail.com</p>
-          <a href="mailto:monuyadav4772@gmail.com" className="btn btn-green mt-2">
-            Request Demo
-          </a>
+
+
+
+
+      <section id="branch" className="section-padding bg-white">
+        <div className="container">
+          <h2 className="fw-bold text-blue text-center mb-5">
+            Our Branches
+          </h2>
+
+          <div className="row justify-content-center g-4">
+
+            <div className="col-md-4">
+              <div className="branch-card text-center shadow-sm border">
+                <div className="branch-icon">📍</div>
+                <h5 className="mt-3">Chomu, Rajasthan</h5>
+                <p className="text-muted small">
+                  Head Office – Support & Development Center
+                </p>
+              </div>
+            </div>
+
+            <div className="col-md-4">
+              <div className="branch-card text-center shadow-sm border">
+                <div className="branch-icon">📍</div>
+                <h5 className="mt-3">Bhiwani, Haryana</h5>
+                <p className="text-muted small">
+                  Training & Client Support Center
+                </p>
+              </div>
+            </div>
+
+          </div>
         </div>
       </section>
+
+
+
+
+
+      <section id="contact" className="section-padding bg-blue text-white">
+        <div className="container">
+          <div className="row align-items-center">
+
+            {/* Left Side */}
+            <div className="col-md-6 text-start">
+              <h2 className="fw-bold mb-3">Get in Touch</h2>
+              <p className="mb-2">
+                Ready to digitize your school with <b>SchoolUnity ERP</b>?
+              </p>
+              <p className="small">
+                Our team will help you with demo, setup and data migration.
+              </p>
+            </div>
+
+            {/* Right Side */}
+            <div className="col-md-6 text-md-end text-start mt-4 mt-md-0">
+              <h5 className="fw-bold">MSP IT Solutions</h5>
+              <p className="mb-1">📞 9306487930 | 8901517890</p>
+              <p className="mb-3">✉️ monuyadav4772@gmail.com</p>
+
+              <div className="d-flex gap-2 justify-content-md-end">
+                <a
+                  href="tel:9306487930"
+                  className="btn btn-outline-light"
+                >
+                  Call Now
+                </a>
+
+                <a
+                  href="mailto:monuyadav4772@gmail.com"
+                  className="btn btn-green"
+                >
+                  Request Demo
+                </a>
+              </div>
+            </div>
+
+          </div>
+
+          <hr className="border-light my-4" />
+
+          <p className="text-center small mb-0">
+            © {new Date().getFullYear()} MSP IT Solutions. All Rights Reserved.
+          </p>
+        </div>
+      </section>
+
 
       {/* FOOTER */}
       <footer className="bg-dark text-white text-center py-3">
