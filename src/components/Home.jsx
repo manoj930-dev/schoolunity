@@ -78,6 +78,7 @@ const Home = () => {
           </div>
         </div>
       </nav>
+
       {/* HERO */}
       <section className="section-padding bg-blue text-white">
         <div className="container">
@@ -356,6 +357,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+
       <section id="features" className="section-padding bg-white">
         <div className="container text-center">
           <h2 className="fw-bold text-blue">Preview of Msp IT Solution Software & School Unity</h2>
@@ -630,6 +632,7 @@ const Home = () => {
               </div>
             </div>
 
+
             <div className="col-md-4">
               <div className="migration-card highlight">
                 <h5>100% Safe & Secure Process</h5>
@@ -640,13 +643,14 @@ const Home = () => {
               </div>
             </div>
 
+
           </div>
 
-          <div className="mt-5">
+          {/* <div className="mt-5">
             <h5 className="text-green">
               "Aap bas data provide kijiye – baaki setup hum sambhal lenge."
             </h5>
-          </div>
+          </div> */}
         </div>
       </section>
 
